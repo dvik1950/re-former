@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="/users" method="post">
+  Username: <input type="text" name="user[username]" value=""><br>
+  Email:<input type="text" name="user[email]" value=""><br>
+  Password: <input type="password" name="user[password]" value=""><br>
+  <input type="submit" value="Submit">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+</form>
+
+
+</body>
+</html>
